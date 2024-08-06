@@ -1,3 +1,7 @@
+
+
+![tree_of_space](https://github.com/user-attachments/assets/55b53a98-7e52-4409-8187-32cd5a92730a)
+
 You need to define three operations on it
 
 1. lock(X, uid)
