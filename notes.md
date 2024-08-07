@@ -512,3 +512,4 @@ Application layer supports application, apps, and end-user processes.
 Quality of service
 This layer is responsible for application services for file transfers, e-mail, and other network software services.
 Protocols like Telnet, FTP, HTTP work on this layer.
+![image](https://github.com/user-attachments/assets/0ec1fe73-269c-4d45-b64b-6fc1a7f711a4)
