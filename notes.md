@@ -434,3 +434,81 @@ Cons
 - The important similarity between IP and a postal service is that packets are **not guaranteed** to arrive at the destination. Although every effort is made to get it there, sometimes packets get lost in transit.
 
 - Furthermore, if you send 5 packets at once, there's no guarantee that they'll arrive at their destination at the same time or in the same order.
+
+
+
+
+
+
+
+
+
+What is OSI model?
+The OSI model (Open System Interconnection) model defines a computer networking framework to implement protocols in seven layers. A protocol in the networking terms is a kind of negotiation and rule in between two networking entities.
+
+Layers of OSI model:
+Physical layer
+
+The Physical layer is also called as the Layer 1. Here are the basic functionalities of the Physical layer:
+
+Responsible for electrical signals, light signal, radio signals etc.
+Hardware layer of the OSI layer
+Devices like repeater, hub, cables, ethernet work on this layer
+Protocols like RS232, ATM, FDDI, Ethernet work on this layer
+Data Link layer
+
+The data link layer is also called as the Layer 2 of the OSI model. Here are the basic functionalities of the data link layer:
+
+Responsible for encoding and decoding of the electrical signals into bits.
+Manages data errors from the physical layer
+Convers electrical signals into frames
+The data link layer is divided into two sub-layers
+The Media Access Control (MAC) layer
+Logical Link Control (LLC) layer.
+The MAC sublayer controls how a computer on the network gains access to the data and permission to transmit it.
+The LLC layer controls frame synchronization, flow control and error checking.
+MAC address is a part of the layer 2.
+Devices like Switch work at this layer
+Network Layer
+
+The Network layer is also called as the layer 3 of the OSI model. Here are the basic functionalities of the network layer:
+
+Switching and routing technologies work here
+Creates logical paths between two hosts across the world wide web called as virtual circuits
+Routes the data packet to destination
+Routing and forwarding of the data packets.
+Internetworking, error handling, congestion control and packet sequencing work at this layer
+Router works at layer three
+Different network protocols like TCP/ IP, IPX, AppleTalk work at this layer
+Transport layer
+
+The Transport  layer is also called as the layer 4 of the OSI model. Here are the basic functionalities of the Transport layer:
+
+Responsible for the transparent transfer of data between end systems
+Responsible for end-to-end error recovery and flow control
+Responsible for complete data transfer.
+Protocols like SPX, TCP, UDP work here
+Session layer
+
+The Session  layer is also called as the layer 5 of the OSI model. Here are the basic functionalities of the Session layer:
+
+Responsible for establishment, management and termination of connections between applications.
+The session layer sets up, coordinates, and terminates conversations, exchanges, and dialogues between the applications at each end.
+It deals with session and connection coordination.
+Protocols like NFS, NetBios names, RPC, SQL work at this layer.
+Presentation layer
+
+The Presentation layer is also called as the layer 6 of the OSI model. Here are the basic functionalities of the presentation layer:
+
+Responsible for data representation on your screen
+Encryption and decryption of the data
+Data semantics and syntax
+Layer 6 Presentation examples include encryption, ASCII, EBCDIC, TIFF, GIF, PICT, JPEG, MPEG, MIDI.
+Application Layer
+
+The Application layer is also called as the layer 7 of the OSI model. Here are the basic functionalities of the Application layer:
+
+Application layer supports application, apps, and end-user processes.
+Quality of service
+This layer is responsible for application services for file transfers, e-mail, and other network software services.
+Protocols like Telnet, FTP, HTTP work on this layer.
