@@ -1,7 +1,14 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Queue;
+import java.util.Scanner;
+import java.util.Set;
 
 public class res_store_partA {
-
 	static class Node {
 		String name;
 		boolean locked;
@@ -20,29 +27,23 @@ public class res_store_partA {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-
 		int n = scanner.nextInt();
 		int m = scanner.nextInt();
 		int q = scanner.nextInt();
-		scanner.nextLine(); // Consume the remaining newline
-
+		scanner.nextLine();
 		Map<String, Node> nodeMap = new HashMap<>();
 		Node root = null;
-
 		// Read node names
 		String[] nodeNames = new String[n];
 		for (int i = 0; i < n; i++) {
 			nodeNames[i] = scanner.nextLine().trim();
 		}
-
 		// Create the root node
 		root = new Node(nodeNames[0], null);
 		nodeMap.put(nodeNames[0], root);
-
 		// Build the tree structure
 		Queue<Node> queue = new LinkedList<>();
 		queue.add(root);
-
 		int index = 1;
 		while (!queue.isEmpty() && index < n) {
 			Node currentNode = queue.poll();
@@ -54,7 +55,6 @@ public class res_store_partA {
 				index++;
 			}
 		}
-
 		// Process queries and store results
 		List<Boolean> results = new ArrayList<>();
 		for (int i = 0; i < q; i++) {
